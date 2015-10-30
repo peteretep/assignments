@@ -1,0 +1,181 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Simple Sectioned Essay Template
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Note:
+% The \lipsum[#] commands throughout this template generate dummy text
+% to fill the template out. These commands should all be removed when 
+% writing essay content.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article} % Default font size is 12pt, it can be changed here
+
+\usepackage{geometry} % Required to change the page size to A4
+\geometry{a4paper} % Set the page size to be A4 as opposed to the default US Letter
+
+\usepackage{graphicx} % Required for including pictures
+
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+\usepackage{wrapfig} % Allows in-line images such as the example fish picture
+
+\usepackage[style=numeric, backend=biber, sorting=none]{biblatex}
+\bibliography{eu_ghg_res_targets.bib}
+\usepackage{url}
+
+\linespread{1.2} % Line spacing
+
+%\setlength\parindent{0pt} % Uncomment to remove all indentation from paragraphs
+
+\graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
+
+\newlength{\wideitemsep}
+\setlength{\wideitemsep}{.5\itemsep}
+\addtolength{\wideitemsep}{-7pt}
+\let\olditem\item
+\renewcommand{\item}{\setlength{\itemsep}{\wideitemsep}\olditem}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+  \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+  \center % Center everything on the page
+
+  \textsc{\LARGE University College Cork}\\[1.5cm] % Name of your university/college
+  \textsc{\Large Sustainable Energy}\\[0.5cm] % Major heading such as course name
+  % \textsc{\large Minor Heading}\\[0.5cm] % Minor heading such as course title
+
+  \HRule \\[0.4cm]
+  { \huge European Progress on Greenhouse Gas and Renewable Energy Targets}\\[0.5cm] % Title of your document
+  \HRule \\[1.5cm]
+
+  \begin{minipage}{0.4\textwidth}
+  \begin{flushleft} \large
+  \emph{Author:} Peter \textsc{Armstrong} \\% Your name 
+  \emph{Student ID:} 115224113
+  \end{flushleft}
+  \end{minipage}
+  ~
+  \begin{minipage}{0.4\textwidth}
+  \begin{flushright} \large
+  % \emph{Supervisor:} \\
+  % Dr. James \textsc{Smith} % Supervisor's Name
+  \end{flushright}
+  \end{minipage}\\[4cm]
+
+  {\large \today}\\[3cm] % Date, change the \today to a set date if you want to be precise
+
+  %\includegraphics{Logo}\\[1cm] % Include a department/university logo - this will require the graphicx package
+
+  \vfill % Fill the rest of the page with whitespace
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+% TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+% \tableofcontents % Include a table of contents
+
+% \newpage % Begins the essay on a new page instead of on the same page as the table of contents 
+
+%----------------------------------------------------------------------------------------
+% INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+%--
+% What progress has been made in terms of EU GHG emissions targets reductions targets?
+% Which areas have been successful and which not?
+
+% What progress has been made in terms of EU Renewable Energy targets?
+% Which areas have been successful and which not?
+
+% Use figures. Max 2 pages for each question.
+%--
+\section{Introduction} % Major section
+The European Union has specified a number of greenhouse gas (GHG) and renewable energy targets for the period until 2050.
+These targets are split into a roadmap with three main parts - short term, medium term and long term targets.
+\\
+The 2050 low-carbon enconomy roadmap \cite{2050roadmap} suggests the EU should cut emmissions to 80\% below 1990 levels by 2050.
+\\
+The 2030 climate and energy framework \cite{2030framework} specifies:
+  \begin{itemize}
+  \item At least 40\% cuts in greenhouse gas emissions (from 1990 levels)
+  \item At least 27\% share for renewable energy
+  \item At least 27\% improvement in energy efficiency
+  \end{itemize}
+The 20-20-20 targets[4] are a set of binding targets for the year 2020. They specify:
+  \begin{itemize}
+  \item 20\% cut in greenhouse gas emissions (from 1990 levels)
+  \item 20\% of EU energy from renewables
+  \item 20\% improvement in energy efficiency
+  \end{itemize}
+
+As the 20-20-20 targets are the most relevant targets at the moment, this paper will discuss the EU progress towards meeting these targets.
+
+%------------------------------------------------
+
+\section{What progress has been made in terms of EU GHG emissions targets reductions targets?}
+According to the European Environment Agency Trends and predictions report \cite{EEA/2015}, the EU as a whole is on track to meet it's climate and energy targets for 2020.
+According to Eurostat \cite{Eurostat:1}, in 1990 the EU produced 5,632,126.62 thousand tonnes of CO2 equivalent greenhouse gas emissions. The figure in 2012 was 4,548,355.03 thousand tonnes. This is a reduction of approximately 19\%. 
+Based on these figures, the EU is well on track to meet the GHG emission target, and may achieve a 24\% reduction by 2020 \cite{EEA/2015}
+
+\subsection{Successful Areas}
+Most of the reduction in GHG emissions are taking place under the Emissions Trading System.
+The EU Emissions Trading System (ETS) is designed to let large producers of greenhouse gas such as power plants and heavy industry trade emission allowances with each other. In this way large emissions producers that cannot easily reduce emissions can effectively buy emission credits from other industries to make an overall reduction. The main market for credits is emission-saving projects around the world and in developing countries.
+Around 45\% of EU emissions are covered by the ETS scheme \cite{ETAFacts:1}.
+The ETS target for 2020 is a 21\% reduction from 2005 levels \cite{2020Targets}.
+In 2014, the GHG emissions in areas covered by the ETS scheme were 23\% less than 1990 levels.
+The 2014 ETS emissions were significantly lower than estimations, and this may be due to the fact that 2014 was a particularly warm year in Europe \cite{EEA/2015}.
+
+The non-ETS sector accounts for the rest of the emissions targets. The non-ETS EU target for 2020 is a 10\% reduction on 2005 levels \cite{2020Targets}. Non-ETS emission reductions are on track and the level of emissions was 7.3\% below the sum of the 28 national ESD targets for 2013 \cite{EEA/2015}.
+
+
+\subsection{Unsuccessful Areas}
+
+The reliance on fossil fuels in the transport sector is still a major issue. According to the Trends and projections in Europe 2015 report \cite{EEA/2015}, between 1990 and 2013 the transport sector was the only major emitting sector to increase it's GHG production. Emissions increased by 19.4\% in this sector, and in 2013 the transport sector represented 22.1\% of total GHG emissions.
+
+Emissions from international aviation are included in the ETS programme. They have increased by 93\% in the period 1990 - 2013 and are expected to continue this increase \cite{EEA/2015}.
+
+More recent figures are better and emissions from transport have been decreasing since 2008 \cite{transport}.
+
+Agriculture is another area where significant reductions have been hard to achieve. Going forward, a slight increase in agriculture emissions is forecast \cite{EEA/2015}.
+
+%------------------------------------------------
+
+\subsection{Renewable Energy Sources} % Sub-section
+Renewable energy sources (RES) have steadily been developed around Europe and now represent a significant percentage of the energy mix. 
+In 2012, RES accounted for 14.1\% of the fuel mix. This is up from 8.7\% in 2005. \cite{REEurope/2015}/2015}. 
+If the rate of development of RES can be continued, Europe can meet the 20\% target by 2020.
+Hydropower and biomass account for the largest share of renewable energy sources, but wind and solar are increasing at a stronger rate \cite{EEA/2015}.
+
+\subsection{Successful Areas}
+Renewable electricity production is steadily increasing and in 2013, 25.4\% of electricity was produced by renewables \cite{EEA/2015}.
+The share of renewables in heating and cooling is also growing steadily and in 2013 accounted for 16.5\%.
+
+\subsection{Unsuccessful Areas}
+Once again, transport is an issue. There is a 2020 sub-target which specifies 10\% share of renewables in the transport sector \cite{EEA/2015}. According to the Trends and projections in Europe 2015 report, RES was only 5.4\% of transport energy consumption. An increase in the renewable share in transport could be achieved by increasing the blending of biofuels into diesel and petrol \cite{repbio}.
+There is also an issue around the sustainability of biofuels. If sustainability can not be demonstrated, it is not counted towards the target \cite{repbio}.
+
+\section{Conclusion} % Major section
+Good progress has been made across the EU towards the 20-20-20 targets. Some sectors have made more progress than others. The ETS scheme is working well to reduce the carbon produced by large emitters. 
+Challenges remain in the non-ETS sector, in particular in the transport area. It is unlikely that the targets for renewables in transport or reduction in carbon in transportation will be achieved.
+%----------------------------------------------------------------------------------------
+% BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+\printbibliography
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
