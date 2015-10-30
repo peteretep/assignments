@@ -1,0 +1,216 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Simple Sectioned Essay Template
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Note:
+% The \lipsum[#] commands throughout this template generate dummy text
+% to fill the template out. These commands should all be removed when 
+% writing essay content.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article} % Default font size is 12pt, it can be changed here
+\usepackage[utf8]{inputenc}    % utf8 support       %!!!!!!!!!!!!!!!!!!!!
+\usepackage[T1]{fontenc}
+
+\usepackage{geometry} % Required to change the page size to A4
+\geometry{a4paper} % Set the page size to be A4 as opposed to the default US Letter
+
+\usepackage{graphicx} % Required for including pictures
+
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+\usepackage{wrapfig} % Allows in-line images such as the example fish picture
+
+\usepackage[style=numeric, backend=biber, sorting=none]{biblatex}
+\bibliography{windfarm_foundations.bib}
+
+\linespread{1.2} % Line spacing
+
+%\setlength\parindent{0pt} % Uncomment to remove all indentation from paragraphs
+
+\graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
+
+\newlength{\wideitemsep}
+\setlength{\wideitemsep}{.5\itemsep}
+\addtolength{\wideitemsep}{-7pt}
+\let\olditem\item
+\renewcommand{\item}{\setlength{\itemsep}{\wideitemsep}\olditem}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+  \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+  \center % Center everything on the page
+
+  \textsc{\LARGE University College Cork}\\[1.5cm] % Name of your university/college
+  \textsc{\Large Practical Offshore Geological Exploration}\\[0.5cm] % Major heading such as course name
+  % \textsc{\large Minor Heading}\\[0.5cm] % Minor heading such as course title
+
+  \HRule \\[0.4cm]
+  { \huge Geological controls on offshore windfarm foundations and engineering solutions}\\[0.5cm] % Title of your document
+  \HRule \\[1.5cm]
+
+  \begin{minipage}{0.4\textwidth}
+  \begin{flushleft} \large
+  \emph{Author:} Peter \textsc{Armstrong} \\% Your name 
+  \emph{Student ID:} 115224113
+  \end{flushleft}
+  \end{minipage}
+  ~
+  \begin{minipage}{0.4\textwidth}
+  \begin{flushright} \large
+  % \emph{Supervisor:} \\
+  % Dr. James \textsc{Smith} % Supervisor's Name
+  \end{flushright}
+  \end{minipage}\\[4cm]
+
+  {\large \today}\\[3cm] % Date, change the \today to a set date if you want to be precise
+
+  %\includegraphics{Logo}\\[1cm] % Include a department/university logo - this will require the graphicx package
+
+  \vfill % Fill the rest of the page with whitespace
+
+% itemize changes
+\newlength{\wideitemsep}
+\setlength{\wideitemsep}{.5\itemsep}
+\addtolength{\wideitemsep}{-7pt}
+\let\olditem\item
+\renewcommand{\item}{\setlength{\itemsep}{\wideitemsep}\olditem}
+
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+% TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+% \tableofcontents % Include a table of contents
+
+% \newpage % Begins the essay on a new page instead of on the same page as the table of contents 
+
+%----------------------------------------------------------------------------------------
+% INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\section{Introduction} % Major section
+Offshore wind farms are becoming a significant business in oceans around the world.
+Although many companies are developing floating wind turbines, to date, most wind turbines are built on foundations on the seabed.
+These foundations need to be robust and long lasting. The ocean is a very inhospitable environment and they need to withstand major storms. Offshore wind turbines typically have a lifespan of 20 years \cite{Siemens:1}. Offshore wind turbines are increasing in size, so foundation technology must also progress to enable these large machines.
+
+There are many factors that influence foundation design but the geological considerations we will discuss here are:
+  \begin{itemize}
+    \item Seabed geology
+    \item Seabed soils
+    \item Sediment movement
+    \item Geohazards
+  \end{itemize}
+
+
+\section{Geological Issues}
+
+
+\subsection{Seabed Geology}
+Depth of the sea is one of the most important considerations for foundation choice. Some foundations may be impractical or unsuitable for deeper waters, and sediment movement will occur at different rates depending on water depth.
+
+The gradient or slope of the seabed is also an issue in offshore wind farming. Seabeds with a gradient above 5\% should be avoided \cite{antonio_pantaleo_feasibility_2005}.
+
+\subsection{Seabed Soils}
+The seabed is typically covered with a layer of sediment. This sediment layer is generally thicker near coasts and contains finer grained particles further from shore.
+In some areas, there may be no sediments due to strong currents. Areas like this would typically not be used for offshore wind farming due to the difficulty of construction in this type of environment.
+The seabed sediment can be calcareous sand (made from the remains of shells and skeletons), or siliceous. Siliceous sediments contains hard, round grains, while calcareous sediments are highly compressible. This will affect the choice of wind turbine foundations.
+
+The consolidation of sediment is a measure of how compressed that sediment is. If the sediment has been laid down gradually over time and not disturbed are referred to as normally consolidated. In some areas, the sediment layer has been compressed by the load of a glacier. When the glacier melts, the load is removed. The soil is then referred to as overconsolidated. The sediment present in the North Sea - an area with a lot of offshore wind farms - is overconsolidated and dense, with a recent layer of softer material \cite{randolph_offshore_2011}. The overconsolidated soils occur because this area was once covered by glaciers.
+
+The choice and specifications of foundations will differ depending on the consolidation and thickness of sediment layers.
+
+
+\subsection{Sediment movement}
+The sediment layer on the seabed is constantly changing. Local hydrodynamic effects and more general sediment movement effects will affect wind turbines in two major ways. Firstly, the changing level of the seabed will change the effective length of the wind turbine tower. This will change the natural frequency of the turbine tower and could affect the rate of fatigue.
+The other issue is the power connection between the turbine tower and the on-site grid. The connection is typically done using a J-shaped connector coming out of the foundation \cite{OffshoreWind:1}. The connector should be buried in the sediment. If the level of the seabed falls, this connector could be left hanging in open water.
+
+\subsubsection{Scour}
+Sediment scour is an issue for any underwater installation. Scour occurs at the base of structures where a hole in the sediment around the structure is formed. It occurs in moving water when sediment is washed away from around the structure.
+The level of scour will depend on the sediment type and the energy in the water. 
+The presence of the structure in the flow will cause a number 
+of hydrodynamical effects. Hydrodynamic calculations will show a water pressure and velocity differentiation around a structure in a flowing liquid. Turbulence can occur in this situation. 
+The velocity around the structure can increase to higher than the threshold of sediment motion. When this happens, the sediment is washed away.
+According to Shields \cite{shields_application_1936}, the threshold of sediment motion is proportional to the density and the diameter of the sediment particles. The level of scour will depend on the sediment type in the area.
+
+In an offshore setting, water movement and scour is caused both by tidal currents and wave action.
+As the movement of water by waves decreases by depth, scour will typically be less in deeper waters.
+
+\subsubsection{Sand Waves}
+Sand waves are an overall movement of the seabed. Sand wave crests of up to 1 metre can move slowly over time \cite{byrneocleirigh}. This means the seabed level can vary over time and this must be taken into account when designing wind turbine foundations.
+
+
+\section{Engineering Solutions}
+
+\subsection{Choice of foundation type}
+
+The two main foundation types used for offshore wind turbines to date are monopile foundations and gravity foundations.
+
+A monopile is a steel tube with a diameter 4m - 8m. It is driven into the seabed by a piledriver or hydraulic hammer. Monopile foundations are the most commonly used foundation for wind turbines \cite{4Coffshore:1}. They are commonly where the seabed is hard or semi-hard and in water depths up to 35m.
+
+If the seabed is hard rock with little sedimentation, it may be necessary to drill a hole for the monopile. It is then grouted into place with concrete.
+% TODO: Reference location of farm that uses monopiles and conditions there.
+
+In conditions as found in the North sea and around UK coasts, monopiles are driven through the top layer of poorly consolidated soil to the stiffer over consolidated layers which can support the turbine loads \cite{jf368cam.ac.uk_research}.
+
+Gravity base foundations are also commonly used. They consist of a large, heavy base that stays in place with gravity. They are typically made from concrete and may be filled with rock and soils.
+
+
+\subsection{Scour Protection}
+Scour protection is an important consideration in any underwater construction.
+Due to hydrodynamic effects, scour depth is typically greater around structures with a square cross section than cylindrical structures. Cylindrical cross sections are generally used for monopiles and gravity foundations.
+
+According to Shields \cite{shields_application_1936}, the threshold of sediment motion is proportional to the density and the diameter of the sediment particles.
+Scour can be prevented simply by dumping larger rocks and material around the base of a structure. The larger material will have a higher threshold of sediment motion and will not get washed away.
+
+Scour around monopiles
+
+Scour around gravity bases
+
+As gravity foundations sit on the seabed and do not extend deeply through the sediment layers, scour can be a big issue.
+If the sediment surrounding the foundation is scoured away, the foundation may move.
+Crushed rock will typically be dumped around the foundation to prevent scour.
+
+
+\subsection{Gravity}
+
+\subsection{Tripod - same as jacket??}
+
+\subsection{Jacket}
+
+
+
+
+
+
+
+%------------------------------------------------
+
+
+
+
+\section{Conclusion} % Major section
+
+
+%----------------------------------------------------------------------------------------
+% BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+\printbibliography
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
