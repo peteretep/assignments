@@ -4,7 +4,6 @@ Earthquakes / seismic activity
 
 geohazards
 
-Topographical features
 
 # The nature of the soil
 sediments in saturated state
