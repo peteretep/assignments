@@ -2212,12 +2212,16 @@
     <bcf:datasource type="file" datatype="bibtex">kilgarvan.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">seai_atlas</bcf:citekey>
-    <bcf:citekey order="2">v90-3.0</bcf:citekey>
-    <bcf:citekey order="3">v90-3.0</bcf:citekey>
-    <bcf:citekey order="4">n90</bcf:citekey>
-    <bcf:citekey order="5">burton_wind_2001</bcf:citekey>
-    <bcf:citekey order="6">birds</bcf:citekey>
+    <bcf:citekey order="1">silicon_republic</bcf:citekey>
+    <bcf:citekey order="2">iwea</bcf:citekey>
+    <bcf:citekey order="3">seai_atlas</bcf:citekey>
+    <bcf:citekey order="4">iwea</bcf:citekey>
+    <bcf:citekey order="5">v90-3.0</bcf:citekey>
+    <bcf:citekey order="6">v90-3.0</bcf:citekey>
+    <bcf:citekey order="7">n90</bcf:citekey>
+    <bcf:citekey order="8">burton_wind_2001</bcf:citekey>
+    <bcf:citekey order="9">birds</bcf:citekey>
+    <bcf:citekey order="10">bird_tool</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none" type="entry" sortscheme="none">
   <bcf:sorting>

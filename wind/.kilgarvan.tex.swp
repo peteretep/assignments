@@ -17,9 +17,8 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[12pt]{article} % Default font size is 12pt, it can be changed here
-\usepackage[utf8]{inputenc} % utf8 support
+\usepackage[utf8x]{inputenc} % utf8 support
 \usepackage[T1]{fontenc}
-\usepackage[official]{eurosym}
 
 \usepackage{geometry} % Required to change the page size to A4
 \geometry{a4paper} % Set the page size to be A4 as opposed to the default US Letter
@@ -104,12 +103,10 @@ The Kilgarvan wind farms are situated on the western side of the Derrynasaggart 
 Three of the farms on this site are operated by Brookfield Renewables. Brookfield are an international company that bought Bórd Gáis' wind farm assets in 2014 \cite{silicon_republic}. Brookfield operate around 15\% of the installed wind capacity in Ireland.
 The farm that we visited is known as Kilgarvan/Coomagearlahy I and Coomagearlahy III \cite{iwea}.
 
-\begin{figure}[h]
   \begin{center}
     \includegraphics[width=1\textwidth]{seai_wind_atlas_kilgarvan}
   \end{center}
-  \caption{Wind speed at 75m - SEAI Wind Atlas - Kilgarvan Area}
-\end{figure}
+  %\caption{Wind speed at 75m - SEAI Wind Atlas - Kilgarvan Area}
 
 According to the SEAI Wind Atlas \cite{seai_atlas}, the area has average wind speeds at 75m height of 8 - 10 m\\s.
 
@@ -138,8 +135,7 @@ There is no forestry on the windward side of the hills where the wind turbines a
 \section{Technology}
 % TODO: Main kilgarvan site ?? Proper names?
 \subsection{Wind Machines}
-
-There are two types of wind turbine installed on the site. The Kilgarvan / Coomagearlaghy site has 15 Vestas V90 turbines. The site has a capacity of 42.5MW and was commissioned in 2007 \cite{iwea}.
+There are two types of wind turbine installed on the site. The Kilgarvan/Coomagearlaghy site has 15 Vestas V90 turbines. The site has a capacity of 42.5MW and was commissioned in 2007 \cite{iwea}.
 The Vestas V90 is a 3MW turbine. The blades are made from lightweight carbon fibre and glass fibre composite materials. The nacelle and tower are also designed to reduce weight. The light weight reduces transportation, installation and foundation costs \cite{v90-3.0}. The V90 has a rotor diameter of 90m.
 Vestas \cite{v90-3.0} describe the V90 as 'a great choice for high and medium wind sites with high turbulence'. 
 The V90 can be used with a variety of different tower heights, but at Kilgarvan it is mounted on a 75m tower. The V90 was originally designed for offshore use. The turbines at Kilgarvan were the first V90 turbines installed onshore.
@@ -152,26 +148,41 @@ The Noredex turbine uses an electrical pitch control system. Each turbine has ba
 
 The Vestas machines use a hydraulic pitch system that does not require battery backup.
 
-The blades on the Vestas machines appear to be swept back significantly. The Nordex blades appear straighter. There was a noticeable twist along the length of the blades. This twist is designed in to accommodate the difference in apparent wind speed along the blades. Figure 3 shows Vestas rotor. Note the swept back blades and twist of the blades.
+The blades on the Vestas machines appear to be swept back significantly. The Nordex blades appear straighter. There was a noticeable twist along the length of the blades. This twist is designed in to accommodate the difference in apparent wind speed along the blades.
+\begin{wrapfigure}{l}{0.4\textwidth} % Inline image example
 
-\begin{figure}[h] % Inline image example
   \begin{center}
-    \includegraphics[width=1\textwidth]{turbine_blades}
+    \includegraphics[width=3.8\textwidth]{turbine_blades}
   \end{center}
-  \caption{Vestas V90 Rotor}
-\end{figure}
+  \caption{Vestas V90 Rotor - Note the twist along the blade length and swept back blades}
+\end{wrapfigure}
+
+\begin{wrapfigure}{l}{0.4\textwidth} % Inline image example
+  \begin{center}
+    \includegraphics[width=0.38\textwidth]{fish}
+  \end{center}
+  \caption{Fish}
+\end{wrapfigure}
+
 
 Some machines are in better sites than others. Some machines are located in depressions, or shadowed by the hillside if the wind is blowing in a particular direction. The power output of the turbines can vary significantly depending on their location. The best performing machine is a Vestas machine on the top of the hill. The worst performing machines are Nordex machines at the bottom of the hill.
 The worst performing machines can generate as little as 40\% of the power as the best performers. This is expected and is taken into account at the design stage.
+
+
+
+% \caption{Example of a parametric plot ($\sin (x), \cos(x), x$)}
+% \centering
+% \includegraphics[width=0.5\textwidth]{spiral}
+
 
 \begin{figure}[h]
 	\begin{center}
 	  \includegraphics[width=1\textwidth]{kilgarvan_layout}
 	\end{center}
-	\caption{Farm Layout - N indicates Nordex, T indicates Vestas}
+	\caption{Farm Layout - N indicates a Nordex turbine, T indicates a Vestas machine}
 \end{figure}
 
-A further 5 N90 turbines are planned for the site. Turbines cost approximately \euro2.5 million and have a 25 year operational lifetime. The cost of the turbines is expected to be paid back in 8 years.
+A further 5 N90 turbines are planned for the site. Turbines cost approximately €2.5 million and have a 25 year operational lifetime. The cost of the turbines is expected to be paid back in 8 years.
 
 Each turbine has an access door at the base of the tower. Inside, there is a voltage converter, turbine control system and a ladder and lift to access the nacelle.
 
