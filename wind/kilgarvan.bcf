@@ -2218,10 +2218,12 @@
     <bcf:citekey order="4">iwea</bcf:citekey>
     <bcf:citekey order="5">v90-3.0</bcf:citekey>
     <bcf:citekey order="6">v90-3.0</bcf:citekey>
-    <bcf:citekey order="7">n90</bcf:citekey>
-    <bcf:citekey order="8">burton_wind_2001</bcf:citekey>
-    <bcf:citekey order="9">birds</bcf:citekey>
-    <bcf:citekey order="10">bird_tool</bcf:citekey>
+    <bcf:citekey order="7">v90-3.0</bcf:citekey>
+    <bcf:citekey order="8">n90</bcf:citekey>
+    <bcf:citekey order="9">burton_wind_2001</bcf:citekey>
+    <bcf:citekey order="10">spa</bcf:citekey>
+    <bcf:citekey order="11">birds</bcf:citekey>
+    <bcf:citekey order="12">bird_tool</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none" type="entry" sortscheme="none">
   <bcf:sorting>
